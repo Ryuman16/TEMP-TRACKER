@@ -8,7 +8,7 @@ const apiClimaActual = `https://api.weatherapi.com/v1/current.json?q=${ciudad}&l
     try {
         const response = await fetch(apiClimaActual);
         let data = await response.json();
-        console.log(data);
+        console.log(data.current.condition);
     } catch (error) {
         console.error("Hubo un error al obtener el clima:", error);
     }

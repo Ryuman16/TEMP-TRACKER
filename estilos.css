@@ -57,6 +57,10 @@ button:hover {
     color: #ddd;
 }
 
+#clima-contenedor {
+    display: none;
+}
+
 .clima-icono {
     width: 170px;
     margin-top: 30px;

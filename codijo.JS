@@ -1,9 +1,8 @@
-const claveApi = '3037ed2e73aa4f0bb99170825261509'; // Tu llave API
+const claveApi = '3037ed2e73aa4f0bb99170825261509';
 const idioma = 'es';
-const inpCiudad = document.getElementById('input-ciudad');
 
 async function obtenerClima() {
-
+    const inpCiudad = document.getElementById('input-ciudad');
     const ciudad = inpCiudad.value;
 
     if (!ciudad) {
@@ -27,5 +26,4 @@ function mostrarClima(data) {
     document.querySelector('.humedad').innerHTML = data.current.humidity + '%';
     document.querySelector('.viento').innerHTML = data.current.wind_kph + ' km/h';
     document.getElementById('clima-contenedor').style.display = 'block';
-
 }
